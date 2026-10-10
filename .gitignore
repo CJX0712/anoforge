@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# 虚拟环境
+venv/
+env/
+.venv/
+envs/
+
+# 测试 / 覆盖率
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# 数据缓存 / 模型权重 / 密钥
+*.cache
+*.model
+*.ckpt
+*.bin
+*.onnx
+.env
+*.pem
+*.key
+secrets.*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 临时产物
+_cli_bench.json
+tmp/

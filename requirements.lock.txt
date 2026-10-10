@@ -1,0 +1,7 @@
+# 锁定的直接依赖（与 CI / 演示环境一致）。
+# 注：本文件为手写可安装版本锁，不使用 pip freeze 的 file:// 本机路径。
+numpy==2.5.3
+scipy==1.18.1
+scikit-learn==1.9.1
+pyod==3.6.6
+optuna==5.0.0

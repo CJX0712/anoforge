@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "anoforge"
+version = "0.1.0"
+description = "World-class unsupervised anomaly detection system with the diversity-weighted AnoFuse ensemble. Author: 晨星"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [{ name = "晨星", email = "CJX0712@users.noreply.github.com" }]
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "scikit-learn>=1.3",
+    "pyod>=2.0",
+    "optuna>=3.0",
+]
+
+[tool.setuptools]
+packages = ["core", "data", "detectors", "ensemble", "eval", "pipeline"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-q -W ignore::UserWarning"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+ignore = ["E501"]
